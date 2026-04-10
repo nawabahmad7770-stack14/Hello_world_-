@@ -1,0 +1,44 @@
+root@MSI:~# ^C
+root@MSI:~# cd ~
+root@MSI:~# mkdir -pv linux-practice/{documents/{past,future},images,backups}
+mkdir: created directory 'linux-practice'
+mkdir: created directory 'linux-practice/documents'
+mkdir: created directory 'linux-practice/documents/past'
+mkdir: created directory 'linux-practice/documents/future'
+mkdir: created directory 'linux-practice/images'
+mkdir: created directory 'linux-practice/backups'
+root@MSI:~# linux-practice/
+├── documents/
+│   ├── past/
+│   └── future/
+├── images/
+└── backups/
+-bash: linux-practice/: Is a directory
+├──: command not found
+│: command not found
+│: command not found
+├──: command not found
+└──: command not found
+root@MSI:~# du -h --max-depth=2 ./ > task_3-4_2.txt
+root@MSI:~# cat task_3-4_2.txt
+4.0K    ./nawab
+4.0K    ./.cache
+4.0K    ./linux-practice/images
+12K     ./linux-practice/documents
+4.0K    ./linux-practice/backups
+24K     ./linux-practice
+4.0K    ./.ssh
+56K     ./
+root@MSI:~# 4.0K    ./documents/past
+4.0K    ./documents/future
+8.0K    ./documents
+4.0K    ./images
+4.0K    ./backups
+20K     .
+4.0K: command not found
+4.0K: command not found
+8.0K: command not found
+4.0K: command not found
+4.0K: command not found
+20K: command not found
+root@MSI:~#

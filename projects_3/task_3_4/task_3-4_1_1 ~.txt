@@ -1,0 +1,7 @@
+root@MSI:~# ls/
+-bash: ls/: No such file or directory
+root@MSI:~# ls /
+bin                dev   init               lib64       mnt   root  sbin.usr-is-merged  sys     usr
+bin.usr-is-merged  etc   lib                lost+found  opt   run   snap                task_3  var
+boot               home  lib.usr-is-merged  media       proc  sbin  srv                 tmp
+root@MSI:~#

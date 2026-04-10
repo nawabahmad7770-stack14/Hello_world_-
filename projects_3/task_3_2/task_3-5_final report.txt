@@ -1,0 +1,9 @@
+PS C:\Users\nawab> "=== Hostname ===" >> task_3-2/lab_final_report.txt;
+PS C:\Users\nawab> hostname >> task_3-2/lab_final_report.txt;
+PS C:\Users\nawab> "`n=== PowerShell Version ===" >> task_3-2/lab_final_report.txt;
+PS C:\Users\nawab> $PSVersionTable | Out-String >> task_3-2/lab_final_report.txt;
+PS C:\Users\nawab> "`n=== System File Checker (verify only) ===" >> task_3-2/lab_final_report.txt;
+PS C:\Users\nawab> sfc /verifyonly >> task_3-2/lab_final_report.txt 2>&1;
+PS C:\Users\nawab> "`n=== Processes containing 'host' (sorted by memory usage) ===" >> task_3-2/lab_final_report.txt;
+PS C:\Users\nawab> Get-Process | Where-Object { $_.ProcessName -like "*host*" } | Sort-Object WorkingSet -Descending | Format-Table Name, @{Name="WorkingSet(MB)";Expression={[math]::Round($_.WorkingSet/1MB,2)}} -AutoSize | Out-String -Width 4096 >> task_3-2/lab_final_report.txt
+PS C:\Users\nawab>
